@@ -12,6 +12,8 @@
 		89233B1120D336BC009E6323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89233B0F20D336BC009E6323 /* Main.storyboard */; };
 		89233B1320D336BE009E6323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89233B1220D336BE009E6323 /* Assets.xcassets */; };
 		89233B1620D336BE009E6323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89233B1420D336BE009E6323 /* LaunchScreen.storyboard */; };
+		89233B2020D33832009E6323 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89233B1F20D33832009E6323 /* TriangleView.swift */; };
+		89233B2220D33F74009E6323 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89233B2120D33F74009E6323 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		89233B1220D336BE009E6323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89233B1520D336BE009E6323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89233B1720D336BE009E6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89233B1F20D33832009E6323 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		89233B2120D33F74009E6323 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				89233B1220D336BE009E6323 /* Assets.xcassets */,
 				89233B1420D336BE009E6323 /* LaunchScreen.storyboard */,
 				89233B1720D336BE009E6323 /* Info.plist */,
+				89233B1F20D33832009E6323 /* TriangleView.swift */,
+				89233B2120D33F74009E6323 /* FaceView.swift */,
 			);
 			path = ExemploDesenho;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89233B0E20D336BC009E6323 /* ViewController.swift in Sources */,
+				89233B2020D33832009E6323 /* TriangleView.swift in Sources */,
 				89233B0C20D336BC009E6323 /* AppDelegate.swift in Sources */,
+				89233B2220D33F74009E6323 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
