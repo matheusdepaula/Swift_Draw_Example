@@ -15,6 +15,18 @@ class FaceView: UIView {
     @IBInspectable
     var strokeColor: UIColor = UIColor.red
     
+    var mounth: Double = 0.0 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    var eyesOpen: Bool = true {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
     private enum Eye {
         case left
         case right
@@ -73,7 +85,14 @@ class FaceView: UIView {
         let eyeRadius = skullRadius / Ratios.skullRadiusToEyeRadius
         let eyeCenter = centerOf(eye: eye)
         
-        let path = UIBezierPath(arcCenter: eyeCenter, radius: eyeRadius, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+        var path = UIBezierPath()
+        
+        if eyesOpen {
+            path = UIBezierPath(arcCenter: eyeCenter, radius: eyeRadius, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+        } else {
+            path.move(to: CGPoint(x: eyeCenter.x - eyeRadius, y: eyeCenter.y))
+            path.addLine(to: CGPoint(x: eyeCenter.x + eyeRadius, y: eyeCenter.y))
+        }
         
         path.lineWidth = 3
         
@@ -88,9 +107,7 @@ class FaceView: UIView {
         
         let mouthRect = CGRect(x: skullCenter.x - mouthWidth / 2, y: skullCenter.y + mouthOffset, width: mouthWidth, height: mouthHeight)
         
-        let mouthCurvature = 0
-        
-        let smileOffset = CGFloat(max(-1, min(mouthCurvature, 1))) * mouthHeight
+        let smileOffset = CGFloat(max(-1, min(mounth, 1))) * mouthHeight
         
         let start = CGPoint(x: mouthRect.minX, y: mouthRect.midY)
         let end = CGPoint(x: mouthRect.maxX, y: mouthRect.midY)

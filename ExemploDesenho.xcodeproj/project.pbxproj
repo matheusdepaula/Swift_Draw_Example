@@ -14,6 +14,9 @@
 		89233B1620D336BE009E6323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89233B1420D336BE009E6323 /* LaunchScreen.storyboard */; };
 		89233B2020D33832009E6323 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89233B1F20D33832009E6323 /* TriangleView.swift */; };
 		89233B2220D33F74009E6323 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89233B2120D33F74009E6323 /* FaceView.swift */; };
+		89788CAA20E520DA00DD1F23 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89788CA920E520DA00DD1F23 /* StarView.swift */; };
+		89788CAC20E526F900DD1F23 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89788CAB20E526F900DD1F23 /* StarViewController.swift */; };
+		89FC851420E30A3E002B9F61 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC851320E30A3E002B9F61 /* FaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		89233B1720D336BE009E6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89233B1F20D33832009E6323 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		89233B2120D33F74009E6323 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		89788CA920E520DA00DD1F23 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		89788CAB20E526F900DD1F23 /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		89FC851320E30A3E002B9F61 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				89233B0B20D336BC009E6323 /* AppDelegate.swift */,
 				89233B0D20D336BC009E6323 /* ViewController.swift */,
+				89FC851320E30A3E002B9F61 /* FaceViewController.swift */,
+				89788CAB20E526F900DD1F23 /* StarViewController.swift */,
 				89233B0F20D336BC009E6323 /* Main.storyboard */,
 				89233B1220D336BE009E6323 /* Assets.xcassets */,
 				89233B1420D336BE009E6323 /* LaunchScreen.storyboard */,
 				89233B1720D336BE009E6323 /* Info.plist */,
 				89233B1F20D33832009E6323 /* TriangleView.swift */,
 				89233B2120D33F74009E6323 /* FaceView.swift */,
+				89788CA920E520DA00DD1F23 /* StarView.swift */,
 			);
 			path = ExemploDesenho;
 			sourceTree = "<group>";
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89788CAA20E520DA00DD1F23 /* StarView.swift in Sources */,
 				89233B0E20D336BC009E6323 /* ViewController.swift in Sources */,
 				89233B2020D33832009E6323 /* TriangleView.swift in Sources */,
+				89FC851420E30A3E002B9F61 /* FaceViewController.swift in Sources */,
 				89233B0C20D336BC009E6323 /* AppDelegate.swift in Sources */,
+				89788CAC20E526F900DD1F23 /* StarViewController.swift in Sources */,
 				89233B2220D33F74009E6323 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
